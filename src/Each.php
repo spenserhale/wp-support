@@ -60,7 +60,7 @@ class Each
     {
         $results = [];
         foreach ($items as $item) {
-            $results = $callback($item);
+            $results[] = $callback($item);
         }
 
         return $results;
